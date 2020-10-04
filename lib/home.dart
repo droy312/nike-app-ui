@@ -10,7 +10,7 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
-  double radius = 30.0;
+  double radius = 31.0;
   Size ds = Size(0.0, 0.0);
   IconData icon = Icons.favorite_border;
   Color orange = Color.fromRGBO(251, 116, 11, 1);
@@ -32,7 +32,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
     super.initState();
 
     topBarAC = AnimationController(
-        vsync: this, duration: Duration(milliseconds: 1000));
+        vsync: this, duration: Duration(milliseconds: 1100));
     imageAC = AnimationController(
         vsync: this, duration: Duration(milliseconds: 2000));
     ratingAC = AnimationController(
@@ -54,7 +54,7 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
           Container(
             color: orange,
             width: double.infinity,
-            padding: EdgeInsets.only(left: 20, right: 20, bottom: 10),
+            padding: EdgeInsets.only(left: 22, right: 22, bottom: 12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               mainAxisAlignment: MainAxisAlignment.end,
@@ -62,9 +62,9 @@ class _HomePageState extends State<HomePage> with TickerProviderStateMixin {
                 // Size text
                 Text(
                   'SIZE',
-                  style: style(Colors.black, 22),
+                  style: style(Colors.black, 24),
                 ),
-                SizedBox(height: 5),
+                SizedBox(height: 6),
                 // Size number and add to card button
                 Container(
                   child: Row(
